@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: elastic-search
+  elasticsearch:
+    username: elasticsearch
+    uris: http://localhost:9200
+
+    # MongoDB connection configuration
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mongo_db
+      auto-index-creation: true
+      authentication-database: admin
+      username: root
+      password: password
+
+
+# You can use either this configuration but this one will show you warning
+#  data:
+#    elasticsearch:
+#      repositories:
+#        enabled: true
+#      cluster-name: elasticsearch
+#      cluster-nodes: 9200
